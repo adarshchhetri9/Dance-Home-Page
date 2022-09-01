@@ -8,11 +8,10 @@
 }
 
 body{
-    background-image: linear-gradient(to right, transparent 35%, 
-    #f5f2f0 30%),  url("/images/pexels-rfstudio-3819572.jpg");
+    background-image:   url("/images/pexels-rfstudio-3819572.jpg");
     background-size: contain; 
     background-repeat: no-repeat;
-    height: 100vh;
+    height: auto;
     margin: 0px 20px;
 }
 
@@ -172,6 +171,10 @@ button{
     flex: 0.5;
 }
 
+.nav-icon{
+    display: none;
+}
+
 .lpic{
     width: 360px;
 }
@@ -180,3 +183,122 @@ button{
     margin-top: 15vh;
     height: 120px;
 }
+
+@media only screen and (max-width: 600px) {
+    *{
+        margin: 0px;
+        padding: 0px;
+        outline: 0px;
+        font-family: 'Tiro Gurmukhi';
+        /* border: 0.1px solid pink; */
+    }
+    
+    .nav-icon{
+        display: block;
+    }
+
+    nav{
+        height: auto;
+        padding: 2vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo{
+        flex: 1;
+    }
+    
+    .logo>img{
+        height: 30px;
+        margin-left: 1vh;
+    }
+    
+    .items{
+        display: none;
+    }
+    
+    .body{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    .blank{
+        flex: 1.5;
+    }
+    
+    .creativity{
+        position: relative;
+        top: 60vh;
+        flex: 2.5;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sub-cre{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hhh{
+        flex-direction: column;
+    }
+    
+    h1{
+        font-size: 4rem;
+    }
+    
+    .fst{
+        color: black;
+        float: left;
+        text-shadow: 1px 1px 2px  white
+    } 
+    
+    .scd{
+        float: right;
+    }
+    
+    .f{
+        flex: 1;
+    }
+    
+    .s{
+        flex: 1;
+        font-size: 1.2em;
+    }
+    
+    .ingri{
+        margin-top: 22.5vh;
+        font-size: 1.5rem;
+        margin-left: 2rem;
+        color: grey;
+    }
+    
+    .t{
+        flex: 0.2;
+    }
+    
+    .social{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 20px;
+        gap: 20px;
+    }
+    
+    .media{
+        height: 20px;
+        width: 20px;
+    }
+    
+    .b{
+        height: 5.5vh; 
+        position: relative;
+        bottom: 15px;
+        left: 20px;
+    }
+    .arrow{
+        display: none;
+    }
+  }
